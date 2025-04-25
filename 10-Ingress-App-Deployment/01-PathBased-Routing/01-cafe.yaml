@@ -12,6 +12,8 @@ spec:
       labels:
         app: coffee
     spec:
+      imagePullSecrets:
+      - name: regcred 
       containers:
       - name: coffee
         image: nginxdemos/nginx-hello:plain-text
@@ -45,6 +47,8 @@ spec:
       labels:
         app: tea
     spec:
+      imagePullSecrets:
+      - name: regcred 
       containers:
       - name: tea
         image: nginxdemos/nginx-hello:plain-text
