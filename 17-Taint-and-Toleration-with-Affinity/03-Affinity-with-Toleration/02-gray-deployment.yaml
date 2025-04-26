@@ -18,8 +18,8 @@ spec:
       - name: regcred
       containers:
       - name: k8s-demo
-        image: amitvashist7/k8s-tiny-web
         imagePullPolicy: IfNotPresent
+        image: amitvashist7/k8s-tiny-web
         ports:
         - name: node-port
           containerPort: 80
