@@ -3,6 +3,8 @@ kind: Pod
 metadata:
   name: privileged
 spec:
+  imagePullSecrets:
+  - name: regcred
   containers:
   - image: nginx
     name: demo-pod
